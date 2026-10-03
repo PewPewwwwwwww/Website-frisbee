@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  color: rgb(3, 3, 3);
+  background-color: aquamarine;
+}
+
+nav .Logo-Name {
+  font-size: 18px;
+  margin-left: 100px;
+}
+
+nav .Nav-Links {
+  display: flex;
+  gap: 30px;
+  margin-right: 200px;
+}
+
+nav .Nav-Links a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  position: relative;
+}
+
+nav .Nav-Links a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(15, 123, 232);
+  transition: width 0.3s ease;
+}
+
+nav .Nav-Links a:hover::after {
+  width: 100%;
+}
+
+.Home {
+  background-image: url('./assets/img/background-for-Home.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+}
+
+.Home .Home-content {
+  padding: 20px 80px;
+}
+
+.Home .Home-content h1 {
+  display: inline-block;
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.Home .Home-content h2 {
+  display: inline-block;
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.Home .Home-content p {
+  font-size: 18px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+  width: 50%;
+  line-height: 1.5;
+}
+
+.Home .Home-content .btn-1 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(15, 123, 232);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-right: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.Home .Home-content .btn-1:hover {
+  background-color: rgb(10, 88, 172);
+}
+
+.Home .Home-content .btn-2 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgb(15, 123, 232);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.Home .Home-content .btn-2:hover {
+  background-color: rgb(10, 88, 172);
+}
+
+.Events {
+  padding: 30px 50px;
+}
+
+.Events .Upcoming-Events {
+  border: solid 1px black;
+  display: inline-block;
+}
+
+.Events .Upcoming-Events h1 {
+  align-items: center;
+}
+
+.Events .Upcoming-Events img {
+  width: 20%;
+}
+
